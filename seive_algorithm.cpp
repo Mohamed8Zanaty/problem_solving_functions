@@ -1,6 +1,5 @@
 int const n = 2 * 1e5 + 5;
 int spf[n];
-
 void sieve() {
     spf[0] = spf[1] = 1;
     for (int i = 2; i < n; i++) {
