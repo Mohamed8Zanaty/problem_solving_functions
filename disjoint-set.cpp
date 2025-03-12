@@ -1,5 +1,3 @@
 int find(int x, int* ds) {
-    if(ds[x] == x)
-        return x;
-    return ds[x] = find(ds[x], ds);
+    return ds[x] == x ? x : ds[x] = find(ds[x], ds);
 }
